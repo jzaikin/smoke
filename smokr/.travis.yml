@@ -6,6 +6,11 @@ python:
   - 3.4
   - 2.7
 install: bash .travis/install-dependencies.sh
+addons:
+  sonarcloud:
+    organization: jzaikin-github
+    token: 
+      secure: 54e462c77de1964c5c0a3afb2629e6ee77a86c06
 script:
   - tox
 deploy:
